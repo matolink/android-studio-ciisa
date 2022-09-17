@@ -5,7 +5,21 @@
       <map>
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/inicio.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/categoria_personal.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/categorias.xml" value="0.3111658456486043" />
+        <entry key="app/src/main/res/layout/configuracion.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/configuracion_cuenta.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/configuracion_cuenta_contacto.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/configuracion_cuenta_contrasena.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/configuracion_cuenta_contraseña.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/configuracion_cuenta_nombre.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/editar_tarea.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/inicio.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/lista de tareas.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/lista_tareas.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/nueva_categoria.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/nueva_cuenta.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/nueva_tarea.xml" value="0.3432971014492754" />
       </map>
     </option>
   </component>
