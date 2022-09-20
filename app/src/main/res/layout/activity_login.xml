@@ -53,7 +53,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Usuario" />
+            android:hint="Usuario"
+            android:inputType="text|textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -68,7 +69,10 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contraseña" />
+            android:autoText="false"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:password="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -77,6 +81,7 @@
         android:layout_height="wrap_content"
         android:background="#009688"
         android:text="Login"
+        android:textColor="#000000"
         app:backgroundTint="@color/buttons"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
