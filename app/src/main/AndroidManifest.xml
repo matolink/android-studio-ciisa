@@ -21,7 +21,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Nueva_Cuenta"
+            android:name=".Configuracion_cuenta_contacto"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -42,7 +42,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Inicio"
+            android:name=".Nueva_Cuenta"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -105,7 +105,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Configuracion_cuenta_contacto"
+            android:name=".Inicio"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

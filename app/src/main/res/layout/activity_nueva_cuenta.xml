@@ -158,8 +158,10 @@
                     android:layout_weight="1">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_baseline_person_24"
                         android:hint="Nombre de Usuario" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -172,7 +174,10 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Confirmar Password" />
+                        android:drawableStart="@drawable/ic_baseline_lock_24"
+                        android:hint="Confirmar Password"
+                        android:inputType="textPassword"
+                        android:password="true" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -184,6 +189,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_baseline_markunread_mailbox_24"
                         android:hint="Repetir correo" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -196,7 +202,10 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Password" />
+                        android:drawableStart="@drawable/ic_baseline_lock_24"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:password="true" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -208,6 +217,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_baseline_markunread_mailbox_24"
                         android:hint="Correo" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
