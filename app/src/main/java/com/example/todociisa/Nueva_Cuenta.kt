@@ -57,11 +57,11 @@ class Nueva_Cuenta : AppCompatActivity() {
 
         val utilidades = Utilidades()
 
-        return  utilidades.validateEmail(email_text, email) &&
-                utilidades.validateEmail(email_confirmation_text, email_confirmation) &&
-                utilidades.validateNull(username_text, username) &&
-                utilidades.validateNull(password_text, password) &&
-                utilidades.validateNull(password_confirmation_text, password_confirmation) &&
+        return  utilidades.validateEmail(email_text, email) and
+                utilidades.validateEmail(email_confirmation_text, email_confirmation) and
+                utilidades.validateNull(username_text, username) and
+                utilidades.validateNull(password_text, password) and
+                utilidades.validateNull(password_confirmation_text, password_confirmation) and
                 (email_confirmation_text != email_text)
     }
 }
