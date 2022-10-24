@@ -14,6 +14,11 @@
         android:theme="@style/Theme.TodoCiisa"
         tools:targetApi="31">
         <activity
+            android:name=".SplashActivity"
+            android:exported="false"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/Theme.TodoCiisa.NoActionBar" />
+        <activity
             android:name=".NavigationDrawer"
             android:exported="false"
             android:label="@string/title_activity_navigation_drawer"
@@ -24,13 +29,6 @@
         </activity>
         <activity
             android:name=".Nueva_tarea"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Configuracion_cuenta_contacto"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
