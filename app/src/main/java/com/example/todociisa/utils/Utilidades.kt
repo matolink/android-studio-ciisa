@@ -8,7 +8,7 @@ import com.google.android.material.textfield.TextInputLayout
 class Utilidades {
 
     fun validateNull(validating: String, field: TextInputLayout?): Boolean{
-        val value = !TextUtils.isEmpty(validating)
+        val value = !TextUtils.isEmpty(validating.trim())
         if(!value){
             field?.error = "Este campo es obligatorio"
         }
@@ -16,7 +16,7 @@ class Utilidades {
     }
 
     fun validateEmail(email: String, field: TextInputLayout?): Boolean{
-        val value = !TextUtils.isEmpty(email) && Patterns.EMAIL_ADDRESS.matcher(email).matches()
+        val value = !TextUtils.isEmpty(email.trim()) && Patterns.EMAIL_ADDRESS.matcher(email).matches()
         if(!value){
             field?.error = "El valor ingresado debe ser un email válido"
         }
