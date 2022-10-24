@@ -31,11 +31,11 @@ class Nueva_Cuenta : AppCompatActivity() {
     }
 
     fun setClickListenners(){
-        val button = findViewById<Button>(R.id.button5)
+        val button = findViewById<Button>(R.id.nueva_cuenta_crear)
         button.setOnClickListener{
             this.onCreateButtonClick()
         }
-        val cancelButton = findViewById<Button>(R.id.button6)
+        val cancelButton = findViewById<Button>(R.id.nueva_cuenta_cancelar)
         cancelButton.setOnClickListener{
             finish()
         }
