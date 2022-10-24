@@ -7,19 +7,12 @@
     android:background="@color/background"
     tools:context=".Login">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
-
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-50dp">
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="-113dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -33,58 +26,43 @@
                 app:layout_constraintGuide_percent="0.05" />
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/tarea_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00FFFFFF"
-                app:srcCompat="@drawable/ic_baseline_edit_24"
-                tools:layout_editor_absoluteX="152dp"
-                tools:layout_editor_absoluteY="318dp" />
-
-            <ImageButton
-                android:id="@+id/imageButton10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00FFFFFF"
-                app:srcCompat="@drawable/ic_baseline_edit_24"
-                tools:layout_editor_absoluteX="151dp"
-                tools:layout_editor_absoluteY="535dp" />
-
-            <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00FFFFFF"
-                app:srcCompat="@drawable/basureroverde"
-                tools:layout_editor_absoluteX="113dp"
-                tools:layout_editor_absoluteY="714dp" />
+                app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintHorizontal_bias="0.392"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/guideline11"
+                app:layout_constraintVertical_bias="0.536"
+                app:srcCompat="@drawable/ic_baseline_edit_24" />
 
             <ImageButton
                 android:id="@+id/imageButton15"
                 android:layout_width="35dp"
                 android:layout_height="37dp"
                 android:background="#00FFFFFF"
-                app:srcCompat="@drawable/ic_baseline_checklist_24"
-                tools:layout_editor_absoluteX="34dp"
-                tools:layout_editor_absoluteY="148dp" />
-
-            <ImageButton
-                android:id="@+id/imageButton14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00FFFFFF"
-                app:srcCompat="@drawable/basureroverde"
-                tools:layout_editor_absoluteX="117dp"
-                tools:layout_editor_absoluteY="772dp" />
+                app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                app:layout_constraintHorizontal_bias="0.59"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton21"
+                app:layout_constraintVertical_bias="0.13"
+                app:srcCompat="@drawable/ic_baseline_checklist_24" />
 
             <ImageButton
                 android:id="@+id/imageButton11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00FFFFFF"
-                app:srcCompat="@drawable/basureroverde"
-                tools:layout_editor_absoluteX="117dp"
-                tools:layout_editor_absoluteY="318dp" />
+                app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintHorizontal_bias="0.096"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/guideline11"
+                app:layout_constraintVertical_bias="0.536"
+                app:srcCompat="@drawable/basureroverde" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline15"
@@ -100,8 +78,12 @@
                 android:text="Lista de tareas:"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
-                tools:layout_editor_absoluteX="113dp"
-                tools:layout_editor_absoluteY="256dp" />
+                app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/guideline11"
+                app:layout_constraintVertical_bias="0.158" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -110,37 +92,25 @@
                 android:text="Personal"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
-                tools:layout_editor_absoluteX="32dp"
-                tools:layout_editor_absoluteY="437dp" />
-
-            <CheckBox
-                android:id="@+id/checkBox7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tarea 1"
-                android:textColor="#FFFFFF"
-                app:buttonTint="#FFFFFF"
-                tools:layout_editor_absoluteX="26dp"
-                tools:layout_editor_absoluteY="759dp" />
+                app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                app:layout_constraintEnd_toStartOf="@+id/guideline17"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/guideline11"
+                app:layout_constraintVertical_bias="0.767" />
 
             <ImageButton
                 android:id="@+id/imageButton12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00FFFFFF"
-                app:srcCompat="@drawable/basureroverde"
-                tools:layout_editor_absoluteX="117dp"
-                tools:layout_editor_absoluteY="475dp" />
-
-            <CheckBox
-                android:id="@+id/checkBox6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tarea 1"
-                android:textColor="#FFFFFF"
-                app:buttonTint="#FFFFFF"
-                tools:layout_editor_absoluteX="26dp"
-                tools:layout_editor_absoluteY="702dp" />
+                app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintHorizontal_bias="0.096"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/guideline11"
+                app:layout_constraintVertical_bias="0.939"
+                app:srcCompat="@drawable/basureroverde" />
 
             <CheckBox
                 android:id="@+id/checkBox2"
@@ -149,35 +119,36 @@
                 android:text="Tarea 1"
                 android:textColor="#FFFFFF"
                 app:buttonTint="#FFFFFF"
-                tools:layout_editor_absoluteX="26dp"
-                tools:layout_editor_absoluteY="301dp" />
+                app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                app:layout_constraintEnd_toStartOf="@+id/guideline17"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/tarea_pedit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="240dp"
                 android:background="#00FFFFFF"
-                app:srcCompat="@drawable/ic_baseline_edit_24"
-                tools:layout_editor_absoluteX="151dp"
-                tools:layout_editor_absoluteY="474dp" />
+                app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintHorizontal_bias="0.392"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/guideline11"
+                app:layout_constraintVertical_bias="0.739"
+                app:srcCompat="@drawable/ic_baseline_edit_24" />
 
             <ImageButton
                 android:id="@+id/imageButton21"
                 android:layout_width="46dp"
                 android:layout_height="44dp"
+                android:layout_marginTop="20dp"
                 android:background="#00FFFFFF"
-                app:srcCompat="@drawable/menublanco"
-                tools:layout_editor_absoluteX="26dp"
-                tools:layout_editor_absoluteY="49dp" />
-
-            <ImageButton
-                android:id="@+id/imageButton13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00FFFFFF"
-                app:srcCompat="@drawable/basureroverde"
-                tools:layout_editor_absoluteX="117dp"
-                tools:layout_editor_absoluteY="535dp" />
+                app:layout_constraintBottom_toTopOf="@+id/guideline11"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/guideline8"
+                app:srcCompat="@drawable/menublanco" />
 
             <CheckBox
                 android:id="@+id/checkBox3"
@@ -186,24 +157,19 @@
                 android:text="Tarea 1"
                 android:textColor="#FFFFFF"
                 app:buttonTint="#FFFFFF"
-                tools:layout_editor_absoluteX="26dp"
-                tools:layout_editor_absoluteY="462dp" />
+                app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                app:layout_constraintEnd_toStartOf="@+id/guideline17"
+                app:layout_constraintHorizontal_bias="0.928"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/guideline11"
+                app:layout_constraintVertical_bias="0.975" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.108866446" />
-
-            <ImageButton
-                android:id="@+id/imageButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00FFFFFF"
-                app:srcCompat="@drawable/basureroverde"
-                tools:layout_editor_absoluteX="117dp"
-                tools:layout_editor_absoluteY="657dp" />
+                app:layout_constraintGuide_percent="0.05" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline7"
@@ -226,34 +192,17 @@
                 android:text="Marty Mc-fly"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
-                tools:layout_editor_absoluteX="114dp"
-                tools:layout_editor_absoluteY="57dp" />
-
-            <CheckBox
-                android:id="@+id/checkBox4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tarea 1"
-                android:textColor="#FFFFFF"
-                app:buttonTint="#FFFFFF"
-                tools:layout_editor_absoluteX="26dp"
-                tools:layout_editor_absoluteY="524dp" />
+                app:layout_constraintBottom_toTopOf="@+id/guideline11"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.23" />
-
-            <ImageButton
-                android:id="@+id/imageButton16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00FFFFFF"
-                app:srcCompat="@drawable/ic_baseline_edit_24"
-                tools:layout_editor_absoluteX="151dp"
-                tools:layout_editor_absoluteY="657dp" />
+                app:layout_constraintGuide_percent="0.12" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -262,8 +211,12 @@
                 android:text="Trabajo"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
-                tools:layout_editor_absoluteX="34dp"
-                tools:layout_editor_absoluteY="202dp" />
+                app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                app:layout_constraintEnd_toStartOf="@+id/guideline17"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/guideline11"
+                app:layout_constraintVertical_bias="0.325" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline2"
@@ -271,25 +224,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.05" />
-
-            <CheckBox
-                android:id="@+id/checkBox5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tarea 1"
-                android:textColor="#FFFFFF"
-                app:buttonTint="#FFFFFF"
-                tools:layout_editor_absoluteX="26dp"
-                tools:layout_editor_absoluteY="643dp" />
-
-            <ImageButton
-                android:id="@+id/imageButton22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00FFFFFF"
-                app:srcCompat="@drawable/ic_baseline_edit_24"
-                tools:layout_editor_absoluteX="151dp"
-                tools:layout_editor_absoluteY="714dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline13"
@@ -313,26 +247,26 @@
                 app:layout_constraintGuide_percent="0.18978103" />
 
             <ImageButton
-                android:id="@+id/imageButton23"
+                android:id="@+id/tarea_add"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="84dp"
                 android:background="#00FFFFFF"
-                app:srcCompat="@drawable/ic_baseline_edit_24"
-                tools:layout_editor_absoluteX="151dp"
-                tools:layout_editor_absoluteY="771dp" />
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintHorizontal_bias="0.464"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/guideline13"
+                app:srcCompat="@drawable/addverde"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-    <ImageButton
-        android:id="@+id/imageButton20"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:srcCompat="@drawable/addverde"
-        tools:ignore="TouchTargetSizeCheck" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

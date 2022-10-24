@@ -7,37 +7,29 @@
     android:background="@color/background"
     tools:context=".Login">
 
-    <ImageButton
-        android:id="@+id/imageButton26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:srcCompat="@drawable/addverde"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-91dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.9" />
+
             <ImageButton
                 android:id="@+id/imageButton17"
-                android:layout_width="46dp"
-                android:layout_height="44dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:background="#00FFFFFF"
+                android:contentDescription="@string/menu_gallery"
                 app:layout_constraintBottom_toTopOf="@+id/guideline12"
                 app:layout_constraintEnd_toStartOf="@+id/guideline10"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -45,9 +37,9 @@
                 app:srcCompat="@drawable/menublanco" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/categoria_trabajo"
                 android:layout_width="108dp"
-                android:layout_height="37dp"
+                android:layout_height="48dp"
                 android:text="Trabajo"
                 android:textColor="#000000"
                 app:backgroundTint="#FFFFFF"
@@ -64,6 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:background="#00FFFFFF"
+                android:contentDescription="TODO"
                 android:minWidth="48dp"
                 android:minHeight="48dp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline18"
@@ -72,8 +65,7 @@
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toTopOf="@+id/guideline11"
                 app:srcCompat="@drawable/ic_baseline_border_all_24"
-                tools:ignore="SpeakableTextPresentCheck"
-                android:contentDescription="TODO" />
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline2"
@@ -132,7 +124,7 @@
                 app:layout_constraintGuide_percent="0.42873177" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/inicio_categorias"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Categorias"
@@ -171,6 +163,22 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline17"
                 app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+            <ImageButton
+                android:id="@+id/categorias_agregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/bottom_sheet_behavior"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline4"
+                app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                app:layout_constraintHorizontal_bias="0.605"
+                app:layout_constraintStart_toStartOf="@+id/guideline17"
+                app:layout_constraintTop_toTopOf="@+id/guideline13"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/addverde" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

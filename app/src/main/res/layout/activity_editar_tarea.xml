@@ -64,7 +64,7 @@
         app:layout_constraintGuide_percent="0.48597082" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/inicio_categorias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Editar Tarea"
@@ -105,7 +105,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/agregar_categoria"
         android:layout_width="367dp"
         android:layout_height="46dp"
         android:text="Editar"
