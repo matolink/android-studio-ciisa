@@ -215,7 +215,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/textInputLayout9"
                     android:layout_width="match_parent"
-                    android:layout_height="154dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:errorEnabled="true">
 
@@ -224,7 +224,28 @@
                         android:layout_height="wrap_content"
                         android:drawableStart="@drawable/ic_baseline_markunread_mailbox_24"
                         android:hint="Correo" />
+
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/birthdayPickerContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:errorEnabled="true">
+                    <EditText
+                        android:id="@+id/birthdayPicker"
+                        android:hint="Fecha Nacimiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/calendar_month"
+                        android:inputType="date"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
