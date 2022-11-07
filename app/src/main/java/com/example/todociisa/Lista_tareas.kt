@@ -38,7 +38,8 @@ class Lista_tareas : AppCompatActivity() {
 
         val arrayAdapter: ArrayAdapter<*>
         val recetas = arrayOf("Tarea 1", "Tarea 2", "Tarea 3", "Tarea 4", "Tarea 5")
-        arrayAdapter = ArrayAdapter(this,android.R.layout.simple_list_item_1, recetas)
+        //arrayAdapter = ArrayAdapter(this,android.R.layout.simple_list_item_1, recetas)
+        arrayAdapter = ArrayAdapter(this,R.layout.elemento_de_lista, recetas)
 
         lv_datos.adapter = arrayAdapter
 
