@@ -37,7 +37,7 @@ class Login : AppCompatActivity() {
 
     fun onLoginButtonClick(){
         if(validateForm()){
-					val intent = Intent(this@Login,NavigationDrawer::class.java)
+					val intent = Intent(this@Login,Inicio::class.java)
 					startActivity(intent)
         }
     }
