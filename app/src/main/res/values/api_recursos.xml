@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Api_key_google"
+        templateMergeStrategy= "perserve"
+        translatable="false"
+        >
+        AIzaSyAzKnDk8byLo84QKo4vY1RlbX4AeCC8ZYs
+    </string>
+</resources>

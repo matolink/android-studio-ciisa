@@ -54,15 +54,15 @@
         app:layout_constraintGuide_percent="0.23" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_perfil"
         android:layout_width="110dp"
         android:layout_height="111dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toStartOf="@+id/guideline15"
-        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="@+id/guideline17"
         app:layout_constraintTop_toTopOf="@+id/guideline8"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.6"
         app:srcCompat="@mipmap/foto_perfil" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -84,7 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.29854098" />
+        app:layout_constraintGuide_percent="0.28" />
 
     <TextView
         android:id="@+id/inicio_categorias"
@@ -95,17 +95,17 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toStartOf="@+id/guideline15"
-        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintHorizontal_bias="0.371"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toTopOf="@+id/guideline13"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.251" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.66423357" />
+        app:layout_constraintGuide_percent="0.68" />
 
     <TextView
         android:id="@+id/inicio_lista"
@@ -116,10 +116,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toStartOf="@+id/guideline15"
-        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="@+id/guideline10"
         app:layout_constraintTop_toTopOf="@+id/guideline13"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintVertical_bias="0.515" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline17"
@@ -156,12 +156,11 @@
         android:text="Marty Mc-fly"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toStartOf="@+id/guideline15"
-        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="@+id/guideline17"
         app:layout_constraintTop_toTopOf="@+id/guideline11"
-        app:layout_constraintVertical_bias="0.31" />
+        app:layout_constraintVertical_bias="0.162" />
 
     <ImageButton
         android:id="@+id/categorias"
@@ -173,7 +172,7 @@
         app:layout_constraintHorizontal_bias="0.647"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline13"
-        app:layout_constraintVertical_bias="0.173"
+        app:layout_constraintVertical_bias="0.262"
         app:srcCompat="@drawable/ic_baseline_border_all_24" />
 
     <ImageButton
@@ -186,7 +185,7 @@
         app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline13"
-        app:layout_constraintVertical_bias="0.488"
+        app:layout_constraintVertical_bias="0.537"
         app:srcCompat="@drawable/ic_baseline_checklist_24" />
 
     <ImageButton
@@ -201,5 +200,16 @@
         app:layout_constraintTop_toTopOf="@+id/guideline13"
         app:layout_constraintVertical_bias="0.773"
         app:srcCompat="@drawable/configverde" />
+
+    <Button
+        android:id="@+id/btn_foto"
+        android:layout_width="153dp"
+        android:layout_height="41dp"
+        android:text="Cambiar Foto"
+        app:backgroundTint="#009688"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintStart_toStartOf="@+id/guideline17"
+        app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

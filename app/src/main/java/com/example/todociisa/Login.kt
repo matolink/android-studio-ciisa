@@ -3,6 +3,7 @@ package com.example.todociisa
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import com.example.todociisa.utils.Utilidades
 import com.google.android.material.textfield.TextInputLayout
@@ -16,6 +17,12 @@ class Login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 				this.setLayouts()
 				this.setClickListenners()
+        val btn_map = findViewById<Button>(R.id.btn_map)
+        btn_map.setOnClickListener{
+            startActivity(
+                Intent(this,
+                    gpsActivity::class.java))
+        }
     }
 
     fun setLayouts(){
