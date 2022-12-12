@@ -1,12 +1,21 @@
 package com.example.todociisa
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.room.Room
 import com.example.todociisa.utils.Utilidades
 import com.google.android.material.textfield.TextInputLayout
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import roomDatabase.Db
+import roomDatabase.entity.Usuario
 
 class Login : AppCompatActivity() {
 		private var email: TextInputLayout? = null
@@ -44,8 +53,18 @@ class Login : AppCompatActivity() {
 
     fun onLoginButtonClick(){
         if(validateForm()){
-					val intent = Intent(this@Login,Inicio::class.java)
-					startActivity(intent)
+            val email_text = email?.editText?.text.toString()
+            val pass_text = pass?.editText?.text.toString()
+
+            CoroutineScope(Dispatchers.IO).launch {
+                val db = Room.databaseBuilder(
+                    applicationContext,
+                    Db::class.java, "database-name"
+                ).build()
+
+                val users = db.daoUsuario().login(email_text, pass_text)
+                onResult(users)
+            }
         }
     }
 
@@ -57,5 +76,17 @@ class Login : AppCompatActivity() {
 
         return  utilidades.validateEmail(email_text, email) and
                 utilidades.validateNull(pass_text, pass)
+    }
+
+    private fun onResult(users: List<Usuario>) {
+        if(users.isEmpty()){
+            Handler(Looper.getMainLooper()).post {
+                Toast.makeText(this@Login,"Usuario o Contraseña incorrectos", Toast.LENGTH_LONG).show()
+            }
+        }
+        else{
+            val intent = Intent(this@Login,Inicio::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -7,15 +7,18 @@
         <entry key="app/src/main/res/drawable/calendar_month.xml" value="0.13" />
         <entry key="app/src/main/res/drawable/ic_baseline_markunread_mailbox_24.xml" value="0.13" />
         <entry key="app/src/main/res/layout/activity_categoria_personal.xml" value="0.27207641601562504" />
+        <entry key="app/src/main/res/layout/activity_categorias.xml" value="0.19114583333333332" />
         <entry key="app/src/main/res/layout/activity_configuracion_cuenta.xml" value="0.10833333333333334" />
         <entry key="app/src/main/res/layout/activity_configuracion_cuenta_contrasena.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/layout/activity_configuracion_cuenta_nombre.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/layout/activity_editar_tarea.xml" value="0.24635416666666668" />
         <entry key="app/src/main/res/layout/activity_inicio.xml" value="0.24635416666666668" />
-        <entry key="app/src/main/res/layout/activity_lista_tareas.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/activity_lista_tareas.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_nueva_categoria.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/layout/activity_nueva_cuenta.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/activity_nueva_tarea.xml" value="0.19114583333333332" />
         <entry key="app/src/main/res/layout/categoria_personal.xml" value="0.3432971014492754" />
         <entry key="app/src/main/res/layout/categorias.xml" value="0.3111658456486043" />
         <entry key="app/src/main/res/layout/configuracion.xml" value="0.3432971014492754" />
@@ -25,6 +28,8 @@
         <entry key="app/src/main/res/layout/configuracion_cuenta_contraseña.xml" value="0.3432971014492754" />
         <entry key="app/src/main/res/layout/configuracion_cuenta_nombre.xml" value="0.3432971014492754" />
         <entry key="app/src/main/res/layout/editar_tarea.xml" value="0.3432971014492754" />
+        <entry key="app/src/main/res/layout/elemento_de_lista.xml" value="0.19114583333333332" />
+        <entry key="app/src/main/res/layout/elemento_de_lista_tarea.xml" value="0.19114583333333332" />
         <entry key="app/src/main/res/layout/inicio.xml" value="0.3432971014492754" />
         <entry key="app/src/main/res/layout/lista de tareas.xml" value="0.3432971014492754" />
         <entry key="app/src/main/res/layout/lista_tareas.xml" value="0.3432971014492754" />
@@ -40,5 +45,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.24635416666666668" />
+      </ProjectState>
+    </option>
   </component>
 </project>

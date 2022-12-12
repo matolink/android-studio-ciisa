@@ -164,6 +164,12 @@
                         android:layout_height="wrap_content"
                         android:drawableStart="@drawable/ic_baseline_person_24"
                         android:hint="Nombre de Usuario" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_baseline_markunread_mailbox_24"
+                        android:hint="Correo" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -218,12 +224,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:errorEnabled="true">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_baseline_markunread_mailbox_24"
-                        android:hint="Correo" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 

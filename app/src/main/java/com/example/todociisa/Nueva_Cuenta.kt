@@ -9,8 +9,14 @@ import android.widget.Button
 import android.widget.DatePicker
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import androidx.room.Room
 import com.example.todociisa.utils.Utilidades
 import com.google.android.material.textfield.TextInputLayout
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import roomDatabase.Db
+import roomDatabase.entity.Usuario
 import java.util.*
 
 class Nueva_Cuenta : AppCompatActivity() {
@@ -76,9 +82,27 @@ class Nueva_Cuenta : AppCompatActivity() {
 
     fun onCreateButtonClick(){
         if(validateForm()){
-            val intent = Intent(this, Login::class.java)
-            startActivity(intent)
+            CoroutineScope(Dispatchers.IO).launch {
+                val db = Room.databaseBuilder(
+                    applicationContext,
+                    Db::class.java, "database-name"
+                ).build()
+
+                val username_text = username?.editText?.text.toString()
+                val email_text = email?.editText?.text.toString()
+                val password_text = password?.editText?.text.toString()
+                val birthday_text = birthday?.text.toString()
+
+                db.daoUsuario().agregarUsuario(Usuario(email_text,username_text,password_text,birthday_text))
+                onResult()
+            }
+
         }
+    }
+
+    private fun onResult() {
+        val intent = Intent(this, Login::class.java)
+        startActivity(intent)
     }
 
     fun validateForm(): Boolean{
@@ -88,7 +112,6 @@ class Nueva_Cuenta : AppCompatActivity() {
         val password_text = password?.editText?.text.toString()
         val password_confirmation_text = password_confirmation?.editText?.text.toString()
         val birthday_text = birthday?.text.toString()
-        Log.d("TEST", birthday_text)
         val utilidades = Utilidades()
 
         return  utilidades.validateEmail(email_text, email) and
@@ -97,6 +120,6 @@ class Nueva_Cuenta : AppCompatActivity() {
                 utilidades.validateNull(password_text, password) and
                 utilidades.validateNull(password_confirmation_text, password_confirmation) and
                 utilidades.validateDate(birthday_text, birthday_container) and
-                (email_confirmation_text != email_text)
+                (email_confirmation_text == email_text)
     }
 }
